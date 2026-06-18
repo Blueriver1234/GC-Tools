@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
 
 html {
-  font-size: 10px;
+  font-size: clamp(6px, 4px + 0.5vw, 10px);
   font-family: "Quicksand", sans-serif;
 }
 
@@ -14,7 +14,7 @@ html {
 
 .web_wrapper {
   min-height: 100vh;
-  background-color: #0b192c;
+  background-color: hsl(215, 60%, 11%);
   display: grid;
   grid-template-rows: 5rem 1fr 5rem;
 }
@@ -24,19 +24,13 @@ html {
   display: flex;
   justify-content: center;
   align-content: center;
-  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.75);
+  box-shadow: 0 0.5rem 0.5rem hsl(215, 60%, 8%);
 }
 
 .web_navbar_container {
-  display: grid;
-  grid-template-columns: 1fr 3fr 1fr;
+  display: flex;
   align-items: center;
-  gap: 3rem;
   width: min(100rem, 95%);
-}
-
-.web_navbar_container .item {
-  padding: 1rem 0;
 }
 
 .navbar_text {
@@ -45,9 +39,14 @@ html {
   color: #fff;
 }
 
+.web_navbar_logo { 
+  padding: 0 2.4rem;
+  width: max(10rem, 10vw);
+}
+
 .web_navbar_categories {
   display: flex;
-  gap: 2em;
+  gap: 2rem;
 }
 
 .web_navbar_categories  a:hover {

@@ -1,0 +1,30 @@
+.main_content {
+  display: flex;
+  margin: 3rem auto 0 auto;
+  width: min(100rem, 95%);
+  border-radius: 1rem;
+  background-color: hsl(215, 60%, 12%);
+}
+
+.content_menu {
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem 2.4rem 0 2.4rem;
+    width: max(10rem, 10vw);
+    color: white;
+    font-size: 1.5rem;
+}
+
+.content_menu h2 {
+    cursor: default;
+}
+
+.content_menu ul li {
+    margin-top: 0.5rem;
+    list-style: none;
+    cursor: pointer;
+}
+
+.content_menu ul li:hover {
+    opacity: 0.8;
+}
