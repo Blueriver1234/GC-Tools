@@ -1,0 +1,47 @@
+.content_menu-heroes {
+  color: hsl(215, 50%, 50%);
+}
+
+.content form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.1rem;
+  margin-top: 1rem;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  background-color: hsl(215, 70%, 10%);
+  box-shadow: 0 0.2rem 0.2rem hsl(0, 0%, 5%);
+}
+
+.content .item {
+  display: flex;
+  gap: 1rem;
+}
+
+.content .item label {
+  padding: 0.5rem;
+  width: 2rem;
+}
+
+.content .item input {
+  flex-grow: 0.8;
+  padding: 0.5rem 1.2rem;
+  border: none;
+  border-radius: 0.5rem;
+  background-color: hsl(215, 70%, 10%);
+  color: hsl(0, 0%, 90%);
+  font-size: clamp(1rem, 1rem + 0.5vw, 1.8rem);
+  font-weight: 300;
+}
+
+.content .item input:hover {
+  background-color: hsl(215, 70%, 7%);
+  outline: none;
+  color: white;
+}
+
+.content .item input:focus {
+  background-color: hsl(215, 70%, 7%);
+  outline: none;
+  color: white;
+}

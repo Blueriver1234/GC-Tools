@@ -1,0 +1,160 @@
+.stats_inputs {
+  display: flex;
+  background-color: hsl(215, 70%, 10%); 
+  box-shadow: 0 0.2rem 0.2rem hsl(0, 0%, 5%);   
+}
+
+.unit {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 1rem;
+  width: max(15rem, 12vw);
+  color: white;
+  font-size: clamp(0.2rem, 1rem + 0.5vw, 1.8rem);
+  font-weight: 300;
+}
+
+.unit_image { 
+  margin: 1.5rem clamp(0.5rem, 0.4rem + 0.5vw, 2.4rem);
+  margin-bottom: 0;
+  border-radius: 0.5rem;
+}
+
+#unit_name {
+  margin: 1rem clamp(0.5rem, 0.4rem + 0.5vw, 2.4rem);
+  margin-bottom: 0;
+  max-width: 100%;
+  padding: 0.5rem 1.2rem;
+  border: none;
+  border-radius: 0.5rem;
+  background-color: hsl(215, 70%, 10%);
+  color: hsl(0, 0%, 90%);
+  text-align: center;
+  font-size: clamp(1rem, 1rem + 0.5vw, 1.8rem);
+  font-weight: 300;
+}
+
+#unit_name:hover {
+  background-color: hsl(215, 70%, 7%);
+  outline: none;
+  color: white;
+}
+
+#unit_name:focus {
+  background-color: hsl(215, 70%, 7%);
+  outline: none;
+  color: white;
+}
+
+.stats {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2.5rem;
+  padding: 1.5rem 3rem 1rem 3rem;
+  width: 100%;
+  color: hsl(0, 0%, 90%);
+  font-size: clamp(1rem, 1rem + 0.5vw, 1.8rem);
+  font-weight: 300;
+  list-style: none;
+}
+
+.stats .item {
+  display: flex;
+  flex-direction: column;
+  padding: 0 1rem;
+  border-radius: 0.8rem;
+}
+
+.stats .item label {
+  padding-bottom: 0.5rem;
+}
+
+.stats .item input {
+  background-color: hsl(215, 70%, 10%);
+  border: 0;
+  border-radius: 0.5rem;
+  font-size: 1.8rem;
+  color: hsl(215, 70%, 45%);
+}
+
+.stats .item input:hover {
+  outline: none;
+  background-color: hsl(215, 70%, 15%);
+  color: hsl(215, 70%, 60%);
+}
+
+.stats .item input:focus {
+  outline: none;
+  background-color: hsl(215, 70%, 15%);  
+  color: hsl(215, 70%, 60%);
+}
+
+.work_place {
+  padding: 2rem clamp(0.5rem, 0.4rem + 0.5vw, 2.4rem);
+  color: white;
+  font-size: clamp(1rem, 0.8rem + 0.5vw, 2rem);
+  font-weight: 300;
+}
+
+.line_selection {
+  display: flex;
+  gap: 1rem;
+  line-height: 1.2;
+}
+
+#line_input {
+  color: hsl(215, 70%, 60%);
+}
+
+#line_input:hover, #line_input:focus {
+  outline: 0;
+}
+
+.spinner {
+  display: flex;
+  gap: 0.2rem;  
+}
+
+.spinner button {  
+  all: unset;
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  height: calc(clamp(1rem, 0.8rem + 0.5vw, 2rem)*1.2);
+  aspect-ratio: 1;
+  border-radius: 50%;
+  border: 0;
+  cursor: pointer;
+}
+
+#spinner-plus {
+  background-color: hsl(215, 70%, 7%);
+  color: green;
+}
+
+#spinner-minus {
+  background-color: hsl(215, 70%, 7%);
+  color: red;
+}
+
+#run_button {
+  all: unset;
+  padding: 0 1rem;
+  border-radius: 0.3rem;
+  background-color: hsl(215, 70%, 60%);
+  cursor: pointer;
+}
+
+#best_line_list {
+  font-size: clamp(1rem, 0.8rem + 0.5vw, 2rem);
+  font-weight: 300;  
+}
+
+#best_line_list li {
+  padding-left: 1rem;
+  list-style: none;
+}
+
+#best_line_list span {
+  color: hsl(215, 70%, 60%);
+}

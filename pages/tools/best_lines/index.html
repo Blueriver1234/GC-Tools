@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GC Tools</title>
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="best_lines.css" />
+  </head>
+  <body>
+    <div class="web_wrapper">
+      <nav class="web_navbar">
+        <div class="web_navbar_container">
+          <div class="web_navbar_logo item">
+            <h3 class="navbar_text">GC Tools</h3>
+          </div>
+          <div class="web_navbar_categories item">
+            <a href="/index.html" class="navbar_text">Home</a>
+            <a href="/pages/deck/index.html" class="navbar_text">Deck</a>
+            <a href="/pages/documentation/index.html" class="navbar_text">Documentation</a>            
+            <div class="dropdown_tools">
+              <a href="" class="navbar_text">Tools</a>
+              <div class="dropdown_tools_content">
+                <a href="/pages/tools/best_lines/index.html" class="tool">Best lines</a>
+                <a href="" class="tool">Best items (single)</a>
+              </div>
+            </div>
+          </div>
+          <div class="web_navbar_user item"></div>
+        </div>
+      </nav>
+      <main class="main_content">
+        <form action="" class="stats_inputs" autocomplete="off">
+          <div class="unit">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSRf46W8TcAtxD7LaM5QrFWhTCmspxytDL9gCRbged2g&s" alt="" class="unit_image">            
+            <input type="text" name="unit_name" value="Archer" id="unit_name" onfocus="this.select()">
+          </div>
+          <ul class="stats">
+            <li class="item">
+              <label for="basic_atk_input">Basic Attack</label>
+              <input type="text" id="basic_atk_input">
+            </li>
+            <li class="item">
+              <label for="incr_atk_input">Increased Attack</label>
+              <input type="text" id="incr_atk_input">
+            </li>
+            <li class="item">
+              <label for="more_dmg_input">More Damage</label>
+              <input type="text" id="more_dmg_input">
+            </li>
+            <li class="item">
+              <label for="cc_input">Critical Chance</label>
+              <input type="text" id="cc_input">
+            </li>
+            <li class="item">
+              <label for="cdmg_input">Critical Damage</label>
+              <input type="text" id="cdmg_input">
+            </li>
+            <li class="item">
+              <label for="as_input">Attack Speed</label>
+              <input type="text" id="as_input">
+            </li>
+          </ul>
+        </form>
+        <form action="" class="work_place">
+          <div class="line_selection">
+            <p>How many lines are needed: </p>
+            <span id="line_input"></span>
+            <div class="spinner">
+              <button id="spinner-plus">+</button>
+              <button id="spinner-minus">-</button>
+            </div>
+            <button id="run_button">Run</button>
+          </div>
+          <div class="line_output">
+            <div class="best_lines">
+              <p>Your unit needs:</p>
+              <ul id="best_line_list">
+              </ul>
+            </div>
+            <div class="line_ranking">
+              <p>Stats ranking:</p>
+              <ol id="line_ranking_list">
+              </ol>
+            </div>            
+          </div>          
+        </form>
+      </main>
+      <footer class="web_footer">
+        <a href="https://github.com/Blueriver1234/GC-Tools" class="github_link">https://github.com/Blueriver1234/GC-Tools</a>
+      </footer>
+    </div>
+
+    <script src="best_lines.js"></script>
+  </body>
+</html>
+
+
